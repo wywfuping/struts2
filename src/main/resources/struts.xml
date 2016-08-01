@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <!--修改default.properties文件默认值-->
+    <!--<constant name="struts.action.extension" value=""/>-->
+
+    <package name="homePackage" extends="struts-default">
+        <action name="home" class="com.yawei.action.HomeAction">
+            <result name="success">/WEB-INF/views/home.jsp</result>
+        </action>
+    </package>
+    <package name="userPackage" namespace="/user" extends="struts-default">
+        <!--页面跳转-->
+        <action name="new" class="com.yawei.action.UserAction" method="newUser">
+            <result name="success">/WEB-INF/views/users/save.jsp</result>
+        </action>
+
+        <!--重定向-->
+        <action name="save" class="com.yawei.action.UserAction" method="save">
+            <result name="success" type="redirectAction">
+                <param name="actionName">list</param>
+                <param name="namespace">/user</param>
+            </result>
+        </action>
+
+        <action name="list" class="com.yawei.action.UserAction" method="list">
+            <result name="success">/WEB-INF/views/users/list.jsp</result>
+        </action>
+    </package>
+
+</struts>
