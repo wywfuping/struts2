@@ -1,9 +1,2 @@
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:47:00 +0800] "GET /user/save HTTP/1.1" 500 7531 http-bio-80-exec-1 260
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:47:02 +0800] "GET /user/save HTTP/1.1" 500 7531 http-bio-80-exec-2 12
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:47:07 +0800] "GET /user/new HTTP/1.1" 200 303 http-bio-80-exec-3 800
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:47:27 +0800] "POST /user/save HTTP/1.1" 302 - http-bio-80-exec-4 46
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:47:27 +0800] "GET /user/list HTTP/1.1" 200 253 http-bio-80-exec-5 761
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:47:54 +0800] "GET /user/list HTTP/1.1" 200 253 http-bio-80-exec-6 9
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:48:00 +0800] "GET /user/new HTTP/1.1" 200 293 http-bio-80-exec-7 64
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:48:02 +0800] "GET /user/new HTTP/1.1" 200 293 http-bio-80-exec-8 5
-0:0:0:0:0:0:0:1 - - [01/Aug/2016:12:48:10 +0800] "POST /user/save HTTP/1.1" 500 7531 http-bio-80-exec-9 9
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:21:43:52 +0800] "GET /user/list HTTP/1.1" 200 253 http-bio-80-exec-1 2724
+0:0:0:0:0:0:0:1 - - [01/Aug/2016:21:44:01 +0800] "GET /user/new HTTP/1.1" 200 323 http-bio-80-exec-2 94
